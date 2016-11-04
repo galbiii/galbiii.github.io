@@ -1,0 +1,295 @@
+/* BASIC STYLES */
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body.blog-page {
+	font-family: 'Lato', Helvetica, sans-serif;
+	background: #ffff;
+}
+
+.wrapper {
+	width: 978px;
+	margin: 0 auto;
+}
+
+* {
+	transition: 0.3s;
+}
+
+/* HEADER */
+
+header {
+	background-color: #292929;
+	border-bottom: 6px solid #1e1e1e;
+}
+
+.header-logo {
+	float: left;
+	font-size: 0;
+	padding: 49px 0 35px;
+}
+
+nav.main-menu {
+	float: right;
+}
+
+.main-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	vertical-align: top;
+	letter-spacing: 2px;
+}
+
+.main-menu a {
+	text-decoration: none;
+	text-shadow: 0px 1px 0 #1e1e1e;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	width: 130px;
+	height: 70px;
+	padding-top: 49px;
+	display: block;
+	border-right: 2px solid #1d1d1d;
+}
+
+.main-menu li:first-child a {
+	border-left: 2px solid #1d1d1d;
+}
+
+.main-menu a.active {
+	color: #58c93a;
+	box-shadow: 0 4px 0 #58c93a;
+	cursor: default;
+}
+
+.main-menu a:hover {
+	background-color: #242424;
+}
+
+.main-menu a.active:hover {
+	background-color: inherit;
+}
+
+/* POSTS */
+
+.blog-page-content {
+	padding-top: 80px;
+	border-left: 1px solid #e1e0e0;
+	border-right: 1px solid #e1e0e0;
+}
+
+article.blog-post {
+	margin: 80px 0;
+}
+
+article.blog-post:first-child {
+	margin-top: 0;
+}
+
+.blog-post img {
+	float: left;
+	width: 468px;
+	height: 306px;
+}
+
+.post-content {
+	float: right;
+	max-width: 450px;
+	margin-right: 18px;
+}
+
+.post-content h2 {
+	margin: -4px 0 35px;
+	line-height: 105%;
+	font-size: 28px;
+	font-weight: 700;
+	color: #4f4e4e;
+}
+
+.post-content p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #606060;
+	margin-bottom: 21px;
+}
+
+.read-more-btn {
+	border-radius: 100px;
+	border: 2px solid #c2c2c2;
+	color: #c2c1c1;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 8px 22px 10px;
+	margin-top: 1px;
+}
+
+.read-more-btn span {
+	font-weight: 300;
+	font-family: Arial;
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 0;
+	margin-left: -14px;
+}
+
+
+.read-more-btn:hover {
+	color: #58c93a;
+	border: 2px solid #58c93a;
+}
+
+.read-more-btn:hover span{
+	opacity: 1;
+	margin-left: 7px;
+}
+
+/* PAGINATION */
+
+.blog-page_pagination {
+	border-top: 1px solid #e1e0e0;	
+}
+
+.blog-page_pagination a {
+	color: #818181;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;	
+	max-width: 228px;
+}
+
+.prev {
+	float: left;
+	margin: 25px 0 25px 28px;
+}
+
+.next {
+	float: right;
+	margin: 25px 28px 25px 0px;
+}
+
+.blog-page_pagination span {
+	font-weight: 300;
+	font-family: Arial;
+	transition: 0s;
+}
+
+.prev span {
+	padding-right: 4px;
+}
+
+.next span {
+	padding-left: 4px;
+}
+
+.blog-page_pagination a:hover {
+	color: #58c93a;
+}
+
+.blog-page_pagination a:hover span {
+	color: transparent;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #f8f8f8;
+	height: 228px;
+	border-top: 1px solid #e1e0e0;
+}
+
+.footer-logo {
+	margin: 70px auto 0;
+	font-size: 0;
+	display: block;
+	max-width: 100px;
+}
+
+.copyright {
+	display: block;
+	margin: 25px auto 30px;
+	font-weight: 400;
+	font-size: 13px;
+	color: #a6a6a6;
+	max-width: 570px;
+	padding-left: 70px;
+
+}
+
+.copyright a {
+	text-decoration: none;
+	font-weight: 700;
+	color: #939292;	
+}
+
+.social-btns {
+	margin: 0 auto;
+	font-size: 0;
+	max-width: 240px;
+}
+
+.social-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+    height: 40px;
+    margin-right: 20px;
+	font-size: 0;
+	background-image: url('../img/spritesheet.png');
+	transition: 0s;
+}
+
+.sprite-fb {
+	background-position: -255px -5px;
+}
+
+.sprite-fb:hover {
+	background-position: -205px -5px;
+}
+
+.sprite-twitter {
+	background-position: -355px -5px;
+}
+
+.sprite-twitter:hover {
+	background-position: -305px -5px;
+}
+
+
+.sprite-behance {
+	background-position: -55px -5px;
+}
+
+.sprite-behance:hover {
+	background-position: -5px -5px;
+}
+
+.sprite-dribble {
+	background-position: -155px -5px;
+}
+
+.sprite-dribble:hover {
+	background-position: -105px -5px;
+}
+
+/* CLEARFIX */
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
